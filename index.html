@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pavankalyan Netturi — Full Stack & App Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&family=Rajdhani:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="noise-overlay"></div>
+    <canvas id="particleCanvas"></canvas>
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <div class="toast" id="toast"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+      <a href="#hero" class="logo">PK<span>.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class="fas fa-moon" id="themeIcon"></i>
+      </button>
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <div class="greeting">Full Stack & App Developer</div>
+        <h1>Pavankalyan<br /><span>Netturi</span></h1>
+        <div class="subtitle">Building the future, one line at a time</div>
+        <p class="tagline">
+          Skilled in React Native, Python & modern web technologies. Creating
+          real-time applications with a passion for innovation and
+          problem-solving.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="https://drive.google.com/file/d/1l89IPJ4LwVtGA6rsQhv-PmAg1o6NY_ec/view?usp=drive_link" class="btn" target="_blank">Resume</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-img-container">
+          <img
+            src="https://z-cdn-media.chatglm.cn/files/2830d6d4-e3ea-48b1-bd3a-46faca49308e.jpeg?auth_key=1881184686-4ad26be759264b1bbfd038d090460a03-0-73cc2b14c150870af4489a6473326da2"
+            alt="Pavankalyan Netturi"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+      <div class="section-container">
+        <div class="section-header reveal">
+          <div class="label">About</div>
+          <h2>Who I <span>Am</span></h2>
+          <div class="divider"></div>
+        </div>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I'm a <strong>Full Stack & App Developer</strong> with hands-on
+              experience building and deploying real-time web and mobile
+              applications. My expertise spans across
+              <strong>Flutter, Python Django,</strong> and modern JavaScript
+              frameworks.
+            </p>
+            <p>
+              With strong problem-solving abilities and a growing interest in
+              <strong>Machine Learning</strong>, I'm constantly pushing the
+              boundaries of what I can build. I thrive in dynamic,
+              innovation-driven teams where collaboration and analytical
+              thinking are valued.
+            </p>
+            <p>
+              From crafting responsive UIs to architecting robust backend APIs,
+              I bring ideas to life with clean code and a user-first mindset.
+            </p>
+          </div>
+          <div class="info-grid reveal">
+            <div class="info-card">
+              <div class="icon"><i class="fas fa-envelope"></i></div>
+              <div class="info-label">Email</div>
+              <div class="info-value" style="font-size: 0.85rem">
+                pavankalyannetturi41@gmail.com
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="icon"><i class="fas fa-phone"></i></div>
+              <div class="info-label">Phone</div>
+              <div class="info-value">7569510664</div>
+            </div>
+            <div class="info-card">
+              <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="info-label">Location</div>
+              <div class="info-value">Kurnool, AP</div>
+            </div>
+            <div class="info-card">
+              <div class="icon"><i class="fas fa-code"></i></div>
+              <div class="info-label">Focus</div>
+              <div class="info-value">Full Stack & ML</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section
+      class="section"
+      id="experience"
+      style="background: var(--bg-surface)"
+    >
+      <div class="section-container">
+        <div class="section-header reveal">
+          <div class="label">Experience</div>
+          <h2>Where I've <span>Worked</span></h2>
+          <div class="divider"></div>
+        </div>
+        <div class="timeline reveal">
+          <div class="timeline-item">
+            <div class="time-period">05/2026 – 08/2026</div>
+            <div class="location">
+              <i
+                class="fas fa-map-marker-alt"
+                style="color: var(--accent); margin-right: 0.5rem"
+              ></i
+              >Chennai, Tamil Nadu
+            </div>
+            <h3>Intern – Full Stack Developer</h3>
+            <div class="company">Leap Campus</div>
+            <ul>
+              <li>
+                Developed and deployed scalable web applications using Python
+                Django, implementing both frontend and backend functionalities.
+              </li>
+              <li>
+                Worked with databases, REST APIs, and responsive user interfaces
+                to deliver efficient and user-friendly solutions.
+              </li>
+              <li>
+                Participated in the complete software development lifecycle,
+                from requirement analysis and development to testing and
+                deployment.
+              </li>
+              <li>
+                Demonstrated strong communication, collaboration, and analytical
+                skills while working in a team-oriented environment.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+      <div class="section-container">
+        <div class="section-header reveal">
+          <div class="label">Skills</div>
+          <h2>What I <span>Do</span></h2>
+          <div class="divider"></div>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-category reveal">
+            <div class="cat-icon"><i class="fas fa-laptop-code"></i></div>
+            <h3>Frontend & Mobile</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Flutter</span
+              ><span class="skill-tag">Dart</span
+              ><span class="skill-tag">Riverpod</span
+              ><span class="skill-tag">React.js</span
+              ><span class="skill-tag">HTML</span
+              ><span class="skill-tag">CSS</span
+              ><span class="skill-tag">Bootstrap</span
+              ><span class="skill-tag">Tailwind</span
+              ><span class="skill-tag">JavaScript</span>
+            </div>
+          </div>
+          <div class="skill-category reveal">
+            <div class="cat-icon"><i class="fas fa-terminal"></i></div>
+            <h3>Programming</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Python</span
+              ><span class="skill-tag">C</span><span class="skill-tag">C++</span
+              ><span class="skill-tag">JavaScript</span>
+            </div>
+          </div>
+          <div class="skill-category reveal">
+            <div class="cat-icon"><i class="fas fa-server"></i></div>
+            <h3>Backend & Database</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Node.js</span
+              ><span class="skill-tag">Express.js</span
+              ><span class="skill-tag">MongoDB</span
+              ><span class="skill-tag">SQLite</span
+              ><span class="skill-tag">Firebase</span>
+            </div>
+          </div>
+          <div class="skill-category reveal">
+            <div class="cat-icon"><i class="fas fa-wrench"></i></div>
+            <h3>Tools & Cloud</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Git</span
+              ><span class="skill-tag">GitHub</span
+              ><span class="skill-tag">VS Code</span
+              ><span class="skill-tag">Google Stitch</span
+              ><span class="skill-tag">AI Tools</span>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top: 3rem" class="reveal">
+          <h3
+            style="
+              font-family: &quot;Teko&quot;, sans-serif;
+              font-size: 1.5rem;
+              text-transform: uppercase;
+              letter-spacing: 0.1em;
+              color: var(--text-secondary);
+              margin-bottom: 1.5rem;
+            "
+          >
+            Soft Skills
+          </h3>
+          <div class="skill-tags" style="gap: 0.8rem">
+            <span
+              class="skill-tag"
+              style="font-size: 1.1rem; padding: 0.6rem 1.5rem"
+              ><i
+                class="fas fa-users"
+                style="color: var(--accent); margin-right: 0.5rem"
+              ></i
+              >Team Leadership</span
+            >
+            <span
+              class="skill-tag"
+              style="font-size: 1.1rem; padding: 0.6rem 1.5rem"
+              ><i
+                class="fas fa-puzzle-piece"
+                style="color: var(--accent); margin-right: 0.5rem"
+              ></i
+              >Problem-Solving</span
+            >
+            <span
+              class="skill-tag"
+              style="font-size: 1.1rem; padding: 0.6rem 1.5rem"
+              ><i
+                class="fas fa-brain"
+                style="color: var(--accent); margin-right: 0.5rem"
+              ></i
+              >Critical Thinking</span
+            >
+            <span
+              class="skill-tag"
+              style="font-size: 1.1rem; padding: 0.6rem 1.5rem"
+              ><i
+                class="fas fa-clock"
+                style="color: var(--accent); margin-right: 0.5rem"
+              ></i
+              >Time Management</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section
+      class="section"
+      id="projects"
+      style="background: var(--bg-surface)"
+    >
+      <div class="section-container">
+        <div class="section-header reveal">
+          <div class="label">04 — Projects</div>
+          <h2>What I've <span>Built</span></h2>
+          <div class="divider"></div>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card reveal">
+            <div class="project-number">01</div>
+            <h3>Bakery App</h3>
+            <span class="project-badge">Real-time Project</span>
+            <p>
+              Full-featured Bakery App for online ordering, product browsing,
+              and order management with product catalog, shopping cart, user
+              authentication, order tracking, and payment integration.
+            </p>
+            <div class="tech-stack">
+              <span>Flutter</span><span>Dart</span><span>Firebase</span
+              ><span>REST API</span><span>Payment SDK</span>
+            </div>
+            <a href="#" class="project-btn" target="_blank"
+              ><i class="fas fa-arrow-right"></i> View Project</a
+            >
+          </div>
+          <div class="project-card reveal">
+            <div class="project-number">02</div>
+            <h3>Study RAG</h3>
+            <span class="project-badge">Student Study Platform</span>
+            <p>
+              A Study RAG project is an AI-powered learning assistant that
+              answers student questions by retrieving and generating responses
+              from uploaded study materials.
+            </p>
+            <div class="tech-stack">
+              <span>FastAPI</span><span>Python</span><span>PostgreSQL</span
+              ><span>HTML</span><span>CSS</span><span>JavaScript</span><span>GrokAPI</span>
+            </div>
+            <a href="https://studyrag-l72m.onrender.com/" class="project-btn" target="_blank"
+              ><i class="fas fa-arrow-right"></i> View Project</a
+            >
+          </div>
+          <div class="project-card reveal">
+            <div class="project-number">03</div>
+            <h3>Expense Tracker App</h3>
+            <span class="project-badge">Finance Tool</span>
+            <p>
+              Manage daily expenses, monitor spending habits, and track
+              financial activities with categorization, transaction history,
+              budget tracking, and data visualization.
+            </p>
+            <div class="tech-stack">
+              <span>Dart</span><span>Flutter</span><span>Riverpod</span>
+            </div>
+            <a href="#" class="project-btn" target="_blank"
+              ><i class="fas fa-arrow-right"></i> View Project</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section class="section" id="certificates">
+      <div class="section-container">
+        <div class="section-header reveal">
+          <div class="label">Certificates</div>
+          <h2>My <span>Certifications</span></h2>
+          <div class="divider"></div>
+        </div>
+        <div class="cert-grid">
+          <div class="cert-card reveal">
+            <div class="cert-icon"><i class="fas fa-mobile-alt"></i></div>
+            <h4>Flutter SDK & Framework</h4>
+            <div class="cert-provider">
+              Building Native iOS & Android Applications
+            </div>
+          </div>
+          <div class="cert-card reveal">
+            <div class="cert-icon"><i class="fas fa-layer-group"></i></div>
+            <h4>Full Stack Development</h4>
+            <div class="cert-provider">
+              Leap Campus × Wentrite Technologies (E-Certification)
+            </div>
+          </div>
+          <div class="cert-card reveal">
+            <div class="cert-icon"><i class="fab fa-react"></i></div>
+            <h4>The Ultimate React Course 2025</h4>
+            <div class="cert-provider">React, Next.js, Redux & More</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section
+      class="section"
+      id="leadership"
+      style="background: var(--bg-surface)">
+      <div class="section-container">
+        <div class="section-header reveal">
+          <div class="label">Leadership</div>
+          <h2>Beyond <span>Code</span></h2>
+          <div class="divider"></div>
+        </div>
+        <div class="leadership-card reveal">
+          <h3>Techniverse — RGUKT SKLM</h3>
+          <div class="role-title">Social Media Coordinator</div>
+          <ul>
+            <li>
+              Managed and coordinated social media activities, creating engaging
+              content to increase audience reach and participation.
+            </li>
+            <li>
+              Collaborated with team members to design promotional content,
+              schedule posts, and monitor audience interactions.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+      <div class="section-container">
+        <div class="section-header reveal">
+          <div class="label">Contact</div>
+          <h2>Let's <span>Connect</span></h2>
+          <div class="divider"></div>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <h3>Have a project in <span>mind</span>?</h3>
+            <p>
+              I'm always open to discussing new projects, creative ideas, or
+              opportunities to be part of your vision.
+            </p>
+            <div class="contact-links">
+              <a href="mailto:pavankalyannetturi41@gmail.com">
+                <i class="fas fa-envelope"></i>pavankalyannetturi41@gmail.com</a>
+              <a href="tel:+917569510664">
+                <i class="fas fa-phone"></i>+91 7569510664</a>
+              <a href="#">
+                <i class="fas fa-map-marker-alt"></i>Kurnool, Andhra Pradesh</a>
+              <a href="https://github.com/Netturi-Pavankalyan" target="_blank">
+                <i class="fab fa-github"></i>GitHub Profile</a>
+              <a
+                href="https://www.linkedin.com/in/pavankalyan-netturi-ab86722b1/"
+                target="_blank">
+                <i class="fab fa-linkedin"></i>LinkedIn Profile</a>
+            </div>
+          </div>
+          <form
+            class="contact-form reveal"
+            id="contactForm"
+            action="https://api.web3forms.com/submit"
+            method="POST">
+            <input
+              type="hidden"
+              name="access_key"
+              value="23895bbe-ee5a-4bbe-96cb-c45941027baa"/>
+
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="John Doe"/>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="john@example.com"/>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                required
+                placeholder="Project Collaboration"/>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                required
+                placeholder="Tell me about your project..."
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="btn primary"
+              style="align-self: flex-start">
+              <i class="fas fa-paper-plane" style="margin-right: 0.5rem"></i>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="social-links">
+        <a href="mailto:pavankalyannetturi41@gmail.com" aria-label="Email"
+          ><i class="fas fa-envelope"></i
+        ></a>
+        <a
+          href="https://github.com/Netturi-Pavankalyan"
+          target="_blank"
+          aria-label="GitHub"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/pavankalyan-netturi-ab86722b1/"
+          target="_blank"
+          aria-label="LinkedIn"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <a href="tel:+917569510664" aria-label="Phone"
+          ><i class="fas fa-phone"></i
+        ></a>
+      </div>
+      <p>
+        © 2025 Pavankalyan Netturi. Built with <span>❤</span> and clean code.
+      </p>
+    </footer>
+
+    <script src="script.js">
+      // Particle Canvas
+    </script>
+  </body>
+</html>
